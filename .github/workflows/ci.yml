@@ -33,7 +33,7 @@ jobs:
 
       - name: Run tests
         run: |
-          docker run myusername/flask-app pytest
+          docker run kshivadevops/flask-app pytest
 
       - name: Push Docker image to Docker Hub
         run: |
