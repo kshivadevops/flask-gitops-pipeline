@@ -29,7 +29,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t myusername/flask-app .
+          docker build -t kshivadevops/flask-app .
 
       - name: Run tests
         run: |
@@ -38,4 +38,4 @@ jobs:
       - name: Push Docker image to Docker Hub
         run: |
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push myusername/flask-app
+          docker push kshivadevops/flask-app
